@@ -1,0 +1,104 @@
+@font-face{
+    font-family: "Edelsans";
+    src: url('font/edelsans_regular.otf'),
+    url('font/edelsans_regular.otf'); /* IE */
+}
+
+html, body {
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+	background-color: #FDF3E7;
+}
+
+#header {
+	color: #3B3738;
+	font-size: 70pt;
+	font-family: Edelsans,Helvetica,Verdana;
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+}
+
+#header p {
+	margin: 50px 0 50px 0;
+}
+
+@media all and (max-width: 834px) and (min-width: 5px) {
+	#header {
+		font-size: 50pt;
+		max-width: 410px;
+	}
+	
+	#header p {
+		margin: 0 0 10px 0;
+	}
+}
+
+#profileContainer {
+	width: 100%;
+	max-width: 820px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+.profile {
+	width: 100%;
+	max-width: 400px;
+	max-height: 500px;
+	margin: 5px;
+	padding: 0px;
+	float: left;
+	overflow: hidden;
+}
+
+.profileImage {
+	width: 80%;
+	max-width: 320px;
+	margin: 0 40px 20px 40px;
+	padding: 0px;
+}
+
+.profileImage img {
+	border-radius: 50%;
+	display: block;
+}
+
+.profileName {
+	color: #FDF3E7;
+	font-size: 22pt;
+	font-family: Edelsans,Helvetica,Verdana;
+	text-align: center;
+	width: 80%;
+	max-width: 400px;
+	height: 100px;
+	line-height: 100px;
+	margin: 0xp;
+	padding: 0px;
+	background-color: #3B3738;
+	margin: 0 auto 0 auto;
+	border-radius: 25px;
+}
+
+.profileName span {
+	display: inline-block;
+	line-height: normal
+}
+
+.profileName:hover {
+	background-color: #C63D0F;
+}
+
+@media all and (max-width: 399px) and (min-width: 5px) {
+	.profileName {
+		height: 60px;
+		line-height: 60px;
+		font-size: 18pt;
+	}
+}
+
